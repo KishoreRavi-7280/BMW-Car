@@ -114,6 +114,13 @@
     .carousel .carousel-item {
         width: 200px;
     }
+    
+}
+@media(max-width:575px){
+    .arrow-1{
+        position: relative;
+        left: 90%;
+    }
 }
 
 

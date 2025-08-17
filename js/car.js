@@ -34,6 +34,27 @@
 
 // }
 
+//scroll up
+let currentIndex = -1;
+  const sections = document.querySelectorAll("section");
+
+  function scrollUp() {
+    if (currentIndex < sections.length - 1) {
+      currentIndex++;
+      sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+
+  let currentIndex2 = 0;
+  const sections2 = document.querySelectorAll("section");
+
+  function scrollUp2() {
+    if (currentIndex2 < sections2.length - 1) {
+      currentIndex2++;
+      sections[currentIndex2].scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
 
 // Toggle menu button

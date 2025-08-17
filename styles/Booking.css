@@ -233,14 +233,16 @@
         min-height: auto;
       }
       .bmw-booking-panel {
-        width: 100%;
+        width: 86%;
         padding: 30px 20px;
+        margin-left: 30px;
+        background-color: none;
       }
     }
 
     @media (max-width: 600px) {
       .bmw-form {
-        max-width: 100% !important;
+        width: 86%;
         padding: 20px;
       }
       h2 {

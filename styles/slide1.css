@@ -177,7 +177,9 @@
 }
 /* Responsive */
 
-@media (max-width: 768px) {
+
+/*@media (max-width: 768px) {
+
     .bmw-slide {
         flex: 1 1 100%; 
     }
@@ -200,16 +202,138 @@
     .bmw-slide-img img{
         height: 26vh;
     }
-/*.buy{
+.buy{
         margin-top: 8px;
     }
-        */
+        
     .buy .BN1{
         position: relative;
         right: 230px;
         bottom: 5px;
         
     } 
+}*/
+/* Large Screens (Desktops >1200px) */
+@media (min-width:1200px) {
+  .bmw-slider-heading h3 {
+    font-size: 48px;
+  }
+  .bmw-slide {
+    width: 320px;
+  }
+}
+
+/* Laptops (992px - 1199px) */
+@media (max-width:1199px) {
+  .bmw-slider-heading h3 {
+    font-size: 42px;
+  }
+  .bmw-slider-subtitle {
+    font-size: 18px;
+  }
+  .bmw-slide {
+    width: 280px;
+  }
+  .bmw-slide-text {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width:991px) {
+  .bmw-slider-heading h3 {
+    font-size: 35px;
+  }
+  .bmw-slider-subtitle {
+    font-size: 16px;
+  }
+  .bmw-slide {
+    width: 45%;
+    margin: 10px;
+  }
+  .bmw-slide-text {
+    width: 100%;
+    height: auto;
+  }
+  .bmw-slide-text .car-list {
+    margin: 10px 20px;
+  }
+  .buy {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .buy .BN1 {
+    margin-top: 10px;
+    right: 0;
+  }
+}
+
+/* Mobiles (576px - 767px) */
+@media (max-width:767px) {
+  .bmw-slider-heading h3 {
+    font-size: 28px;
+  }
+  .bmw-slider-subtitle {
+    font-size: 14px;
+  }
+  .bmw-slide {
+    width: 100%;
+    height: 0vh;
+  }
+  .bmw-slide-text {
+    width: 100%;
+  }
+  .bmw-slide-text .car-list {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+  .bmw-slider-btn {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+}
+
+/* Extra Small Mobiles (<575px) */
+@media (max-width:575px) {
+  .bmw-slider-heading h3 {
+    font-size: 24px;
+  }
+  .bmw-slider-subtitle {
+    font-size: 12px;
+  }
+ .bmw-slide {
+    
+    margin: 10px 12px;
+    height: 50vh;
+    width: 100%;
+    min-width: 40vh;
+  }
+  .bmw-slide-img img{
+    height: 22vh;
+  }
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .heading .year {
+    left: 5px;
+    margin-top: 5px;
+  }
+  .buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .bmw-slide-text .car-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 15px 0 15px 0px;
+    position: relative;
+    left: 15%;
+  }
 }
 
 
