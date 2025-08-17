@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/cards.css" type="text/css">
   <link rel="stylesheet" href="./styles/slide1.css" type="text/css">
   <link rel="stylesheet" href="./styles/Booking.css" type="text/css">
+  <link rel="stylesheet" href="./styles/footer.css" type="text/css">
   <!-- slider -->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -207,7 +208,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -255,7 +256,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -303,7 +304,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -352,7 +353,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -401,7 +402,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -478,7 +479,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN1">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -527,7 +528,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN1">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -553,7 +554,7 @@
                       <span class="card-text">
                         <i class="bi bi-lightning-charge-fill icon-des"></i>
                         Gasoline
-                      </span.>
+                      </span>
                     </li>
                     <li class="car-card">
                       <span class="card-text">
@@ -576,7 +577,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN1">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -624,7 +625,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN1">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -672,7 +673,7 @@
                         250000
                       </span>
                     </li>
-                    <li><button class="BN1">Buy Now</button></li>
+                    <li><a href="#Booking"><button class="BN">Buy Now</button></a></li>
                    </ul>
                 </div>
               </div>
@@ -688,8 +689,116 @@
 
     </div>
 
+    <!-- Booking -->
+    <div class="body3" id="Booking">
+     <div class="bmw-container">
+    <!-- Booking Form -->
+     <div class="cnt">
+    <div class="bmw-booking-panel">
+      <form id="bmwBookingForm" class="bmw-form bmw-booking-form">
+        <h2>BMW Car Booking</h2>
 
+        <label for="bmwBName" class="yn">Name</label>
+        <input type="name" id="bmwBName" placeholder="Your Name"  required>
 
+        <label for="bmwBEmail" class="em">Email</label>
+        <input type="name" id="bmwBEmail" placeholder="Your Email"  required>
+
+        <label for="bmwBLocation" class="ad">Address</label>
+        <input type="name" id="bmwBLocation" placeholder="Your Address"  required>
+    </div>
+    </div>
+        <!-- Car Series Dropdown -->
+         <div class="bng">
+        <div class="bmwdrpd " id="bmwSeriesDropdown">
+          <div class="slt">
+            <span class="sltd">Car Series</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="bmwmnu">
+            <li data-value="X">X Series</li>
+            <li data-value="M">M Series</li>
+          </ul>
+        </div>
+
+        <!-- Car Model Dropdown -->
+        <div class="bmwdrpd" id="bmwModelDropdown">
+          <div class="slt">
+            <span class="sltd">Car Model</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="bmwmnu2">
+            <li class="active">Select a Series </li>
+          </ul>
+        </div>
+
+        <label for="bmwPickup" class="dt">Pick-up Date & Time</label>
+        <input type="datetime-local" id="bmwPickup"  required>
+
+        <label for="bmwDropoff" class="dt2">Drop-off Date & Time</label>
+        <input type="datetime-local" id="bmwDropoff"  required>
+
+        <label for="bmwBContact" class="ct">Contact Number</label>
+        <input type="tel" id="bmwBContact" placeholder="Your Number" class="clr" required>
+
+        <button type="submit" class="bmw-btn">Book Now</button>
+      </form>
+    </div>
+    </div>
+  </div>
+  </div>
+ <!-- End of booking -->
+
+  <!-- footer -->
+ <!-- ================== FOOTER ================== -->
+<footer class="booking-footer">
+  <div class="footer-container">
+    
+    <!-- Brand -->
+    <div class="footer-section brand">
+      <h2>BMW</h2>
+      <p>Your trusted partner for premium car rentals and bookings.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">supercars</a></li>
+        <li><a href="#x-series">X-series</a></li>
+        <li><a href="#m-series">M-series</a></li>
+        <li><a href="#Booking">Book a Car</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p><i class="fa fa-map-marker"></i> Erode, India</p>
+      <p><i class="fa fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa fa-envelope"></i> support@bmw.com</p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></i></a>
+        <a href="#"><i class="bi bi-link-45deg"></i></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 BMW. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <!-- end of footer -->
 
 
   </div> <!--End of container-->

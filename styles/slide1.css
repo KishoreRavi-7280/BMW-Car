@@ -7,16 +7,18 @@
 }
 
 /* Section Background */
-.bmw-slider-section {
+#bmw-slider-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    padding: 50px 0;
     background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), 
                 url(../img/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 /* Heading */
@@ -37,7 +39,7 @@
 .bmw-slider-wrapper {
     position: relative;
     width: 90%;
-   max-width: 1200px;
+    max-width: 190%;
     margin-top: 20px;
 }
 
@@ -174,17 +176,6 @@
     color: #0fa1ea;
 }
 /* Responsive */
-@media (min-width: 550px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .heading{
-        margin-top: 10px;
-    }
-   
-}
 
 @media (max-width: 768px) {
     .bmw-slide {
@@ -195,7 +186,7 @@
         margin: 15px;
     }
     .bmw-slide-text{
-        height: 15vh;
+         height: 15vh; 
         
     }
     .bmw-slide-text .car-list{
@@ -207,7 +198,7 @@
         flex: 2;
     }
     .bmw-slide-img img{
-        height: 18vh;
+        height: 26vh;
     }
 /*.buy{
         margin-top: 8px;
@@ -215,30 +206,10 @@
         */
     .buy .BN1{
         position: relative;
-        right: 250px;
+        right: 230px;
+        bottom: 5px;
         
     } 
 }
 
-@media (max-width: 480px) {
-    .footer-container {
-        padding: 15px;
-    }
 
-    .social-icons a {
-        font-size: 1.2rem; 
-    }
-
-    .footer-text ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .footer-text ul li {
-        margin: 5px 0;
-    }
-    .footer-text{
-        display: flex;
-        justify-content: center;
-    }
-}

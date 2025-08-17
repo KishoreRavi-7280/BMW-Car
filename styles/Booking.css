@@ -1,64 +1,253 @@
-.bmw-slider-booking-wrapper {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+  .body3 {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #1f1f1f, #030303);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.bmw-booking-form {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    width: 320px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-}
+    /* Container */
+    .bmw-container {
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      /* max-width: 800px; */
+      min-height: 90vh;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+      border-radius: 15px;
+      overflow: hidden;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 20px;
+    }
 
-.bmw-booking-form h3 {
-    margin-bottom: 15px;
-    color: hsl(24, 37%, 18%);
-}
+    /* Booking Panel */
+    .bmw-booking-panel {
+      flex: 1;
+      background: lightskyblue  ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.5px solid rgba(255, 255, 255, 0.07);
+      padding: 20px;
+      border-radius: 20px;
+    }
 
-.bmw-booking-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
+    /* Form */
+    .bmw-form {
+      width: 100%;
+      max-width: 400px;
+      background: rgba(0,0,0,0.4);
+      padding: 25px;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
 
-.bmw-booking-form input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
+    .bmw-booking-form:hover {
+      transform: translateY(-5px);
+    }
 
-.bmw-booking-form button {
-    margin-top: 15px;
-    width: 100%;
-    padding: 10px;
-    background: hsl(24, 37%, 30%);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-.bmw-booking-form button:hover {
-    background: hsl(24, 37%, 20%);
-}
+    label {
+      display: block;
+      margin: 5px 2px;
+      color: whitesmoke;
+    }
+    .yn{
+        width: 11.5%;
+        color: whitesmoke;
+        
+    }
+    .em{
+        width: 11%;
+        color: whitesmoke;
+    }
+    .ad{
+        width: 15%;
+        color: whitesmoke;
+    }
+    
+    .dt{
+        width: 48%;
+    }
+    .dt2{
+        width: 48%;
+    }
+    .ct{
+        width: 37%;
+        color: whitesmoke;
+    }
+    input[type="tel"] {
+      color:#151616;          /* Text color */
+      background-color: transparent;  /* Background color */
+      border: 2px solid #00bcd4;
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 16px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      margin-bottom: 15px;
+      transition: box-shadow 0.3s;
+      background-color: none;
+    }
 
-/* Book Now Buttons inside Slider */
-.bmw-book-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: hsl(24, 37%, 30%);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
+    input:focus {
+      box-shadow: 0 0 10px #00e6e6;
+    }
 
-.bmw-book-btn:hover {
-    background: hsl(24, 37%, 20%);
-}
+    .bmw-btn {
+      width: 100%;
+      padding: 12px;
+      background: #ff9800;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .bmw-btn:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+
+    /* ========================= */
+    /* DROPDOWN STYLING (CUSTOM) */
+    /* ========================= */
+    .bng{
+        border: 2px solid white;
+        padding: 50px 70px;
+        border-radius: 20px;
+        background: rgb(195, 192, 192);
+        transition: 0.5s;
+    }
+    .bng:hover{
+        box-shadow: inset 0 0 150px rgba(18, 18, 18, 0.5);
+        transform: translateY(-5px);
+    }
+    .bmwdrpd {
+      min-width: 100%;
+      position: relative;
+      margin: 1rem 0;
+    }
+
+    .bmwdrpd * {
+      box-sizing: border-box;
+    }
+
+    .slt {
+      background-color: #2a2f3b;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 2px #2a2f3b;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .slt-clcd {
+      border: 2px #2a2f3b solid;
+      box-shadow: 0 0 0.8rem #26489a;
+    }
+
+    .slt:hover {
+      background: #323741;
+    }
+
+    .caret {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid #fff;
+      transition: 0.3s;
+    }
+
+    .caret-rotate {
+      transform: rotate(180deg);
+    }
+
+    /* Dropdown Menus */
+    .bmwmnu, .bmwmnu2 {
+      list-style: none;
+      padding: 0.2em 0.5em;
+      background: #323741;
+      border-radius: 0.5em;
+      color: #9fa5b5;
+      position: absolute;
+      top: 3.3em;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      opacity: 0;
+      display: none;
+      transition: 0.2s;
+      z-index: 99;
+    }
+
+    .bmwmnu li, .bmwmnu2 li {
+      margin: 0.3em 0;
+      padding: 0.7em 0.5em;
+      border-radius: 0.5em;
+      cursor: pointer;
+    }
+
+    .bmwmnu li:hover, .bmwmnu2 li:hover {
+      background: #2a2d35;
+    }
+
+    .active {
+      color: darkslategrey;
+    }
+
+    /* When Open */
+    .bmwmnu-open, .bmwmnu2-open {
+      display: block !important;
+      opacity: 1 !important;
+      margin-top: 10px;
+    }
+
+    /* ========================= */
+    /* RESPONSIVE */
+    /* ========================= */
+    @media (max-width: 992px) {
+      .bmw-container {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+      }
+      .bmw-booking-panel {
+        width: 100%;
+        padding: 30px 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .bmw-form {
+        max-width: 100% !important;
+        padding: 20px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      input, .slt, .bmw-btn {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
