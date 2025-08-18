@@ -120,6 +120,12 @@
     .arrow-1{
         position: relative;
         left: 85%;
+        bottom: 7px;
+        padding: 10px;
+    }
+    .year{
+        position: relative;
+        left: 8px;
     }
 }
 

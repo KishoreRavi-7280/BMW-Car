@@ -1,6 +1,6 @@
 const bmwModels = {
-      X: ["X1", "X2", "X3", "X4", "X5", "X6", "X7", "iX"],
-      M: ["M2 Coupe", "M3 Sedan", "M4 Coupe", "M5 Sedan", "M8 Coupe", "XM SUV"]
+      X: ["X5 Drive4oi","X5","X5 Plug-in","X5 M","X5 M Competition"],
+      M: ["M3 F80 Sedan", "M3 Sedan", "M4 Coupe", "M5 Hurrican RR", "M3 Competiton"]
     };
 
     // Handle dropdown open/close + selection
@@ -54,12 +54,12 @@ const bmwModels = {
     setupDropdown(document.getElementById("bmwModelDropdown"));
 
     // Booking Form Submit
-    document.getElementById("bmwBookingForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      alert("🎉 Your BMW booking has been confirmed!");
-      this.reset();
+    // document.getElementById("bmwBookingForm").addEventListener("submit", function(e) {
+    //   e.preventDefault();
+    //   alert("🎉 Your BMW booking has been confirmed!");
+    //   this.reset();
 
-      // Reset dropdowns display
-      document.querySelector("#bmwSeriesDropdown .sltd").innerText = "Car Series";
-      document.querySelector("#bmwModelDropdown .sltd").innerText = "Car Model";
-    });
+    //   // Reset dropdowns display
+    //   document.querySelector("#bmwSeriesDropdown .sltd").innerText = "Car Series";
+    //   document.querySelector("#bmwModelDropdown .sltd").innerText = "Car Model";
+    // });

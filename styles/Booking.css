@@ -71,7 +71,7 @@
         color: whitesmoke;
     }
     .ad{
-        width: 15%;
+        width: 19%;
         color: whitesmoke;
     }
     
@@ -147,7 +147,11 @@
     .bmwdrpd * {
       box-sizing: border-box;
     }
-
+    /* .sltd{
+      background-color: transparent;
+      font-size: 1.1rem;
+      color: whitesmoke;
+    } */
     .slt {
       background-color: #2a2f3b;
       color: #fff;
@@ -233,16 +237,16 @@
         min-height: auto;
       }
       .bmw-booking-panel {
-        width: 90%;
+        width: 95%;
         padding: 30px 20px;
-        margin-left: 20px;
+        margin-left: 5px;
         background-color: none;
       }
     }
 
     @media (max-width: 600px) {
       .bmw-form {
-        width: 90%;
+        width: 95%;
         padding: 20px;
       }
       h2 {
@@ -252,4 +256,12 @@
         font-size: 14px;
         padding: 8px;
       }
+      input[type="datetime-local"] {
+      color:white;          /* Text color */
+      background-color: transparent;  /* Background color */
+      border: 2px solid #00bcd4;
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 16px;
+    }
     }

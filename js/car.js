@@ -57,41 +57,136 @@ let currentIndex = -1;
   }
 
 
-// Toggle menu button
+// // Toggle menu button
+
+// const header = document.querySelector("header");
+
+// window.addEventListener ("scroll", function() {
+// 	header.classList.toggle ("stickyy", window.scrollY > 0);
+// });
+
+// function toggleMenu() {
+//     const menu = document.querySelector('.menu');
+//     const nav = document.querySelector('.nav');
+//     if (menu) menu.classList.toggle('active');
+//     if (nav) nav.classList.toggle('active');
+// }
+// // menu
+// const sr = ScrollReveal ({
+// 	distance: '45px',
+// 	duration: 2700,
+// 	reset: true
+// })
+
+//  sr.reveal('.content',{delay:350, origin:'left'})
+//  sr.reveal('.logo',{delay:350, origin:'right'})
+
+// sr.reveal('.home,.x-series,.m-series,.Booking',{delay:200, origin:'bottom'})
+
+// // Change the background video when clicking on the gallery
+// function changeVideo(names) {
+//     const bgVideoList = document.querySelectorAll('.bg-video');
+//     const trailers = document.querySelectorAll('.trailer');
+//     const models = document.querySelectorAll('.model');
+
+//     // Change background videos
+//     bgVideoList.forEach(video => {
+//         video.classList.remove('active');
+//         if (video.classList.contains(names)) {
+//             video.classList.add('active');
+//         }
+//     });
+
+//     // Change model name
+//     models.forEach(model => {
+//         model.classList.remove('active');
+//         if (model.classList.contains(names)) {
+//             model.classList.add('active');
+//         }
+//     });
+
+//     // Change trailers
+//     trailers.forEach(trailer => {
+//         trailer.classList.remove('active');
+//         if (trailer.classList.contains(names)) {
+//             trailer.classList.add('active');
+//         }
+//     });
+// }
+
+
+// Sticky Header
+const header = document.querySelector("header");
+window.addEventListener("scroll", function () {
+  header.classList.toggle("stickyy", window.scrollY > 0);
+});
+
+// Toggle Menu
 function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    const nav = document.querySelector('.nav');
-    if (menu) menu.classList.toggle('active');
-    if (nav) nav.classList.toggle('active');
+  const menu = document.querySelector(".menu");
+  const nav = document.querySelector(".nav");
+  const toggleBtn = document.querySelector(".menu-toggle");
+
+  if (menu) menu.classList.toggle("active");
+  if (nav) nav.classList.toggle("active");
+  if (toggleBtn) toggleBtn.classList.toggle("open"); // animate crossline
 }
 
-// Change the background video when clicking on the gallery
+// Attach click event to hamburger button
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.querySelector(".menu-toggle");
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", toggleMenu);
+  }
+
+  // Close menu when clicking on nav links (for mobile UX)
+  document.querySelectorAll(".nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.querySelector(".menu")?.classList.remove("active");
+      document.querySelector(".nav")?.classList.remove("active");
+      toggleBtn?.classList.remove("open");
+    });
+  });
+
+  // Reset menu on window resize
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      document.querySelector(".menu")?.classList.remove("active");
+      document.querySelector(".nav")?.classList.remove("active");
+      toggleBtn?.classList.remove("open");
+    }
+  });
+});
+
+// ScrollReveal Animations
+const sr = ScrollReveal({
+  distance: "45px",
+  duration: 2700,
+  reset: true,
+});
+
+sr.reveal(".content", { delay: 350, origin: "left" });
+sr.reveal(".logo", { delay: 350, origin: "right" });
+sr.reveal(".home,.x-series,.m-series,.Booking", {
+  delay: 200,
+  origin: "bottom",
+});
+
+// Change Background Video
 function changeVideo(names) {
-    const bgVideoList = document.querySelectorAll('.bg-video');
-    const trailers = document.querySelectorAll('.trailer');
-    const models = document.querySelectorAll('.model');
+  const bgVideoList = document.querySelectorAll(".bg-video");
+  const trailers = document.querySelectorAll(".trailer");
+  const models = document.querySelectorAll(".model");
 
-    // Change background videos
-    bgVideoList.forEach(video => {
-        video.classList.remove('active');
-        if (video.classList.contains(names)) {
-            video.classList.add('active');
-        }
-    });
+  bgVideoList.forEach((video) => {
+    video.classList.toggle("active", video.classList.contains(names));
+  });
 
-    // Change model name
-    models.forEach(model => {
-        model.classList.remove('active');
-        if (model.classList.contains(names)) {
-            model.classList.add('active');
-        }
-    });
+  models.forEach((model) => {
+    model.classList.toggle("active", model.classList.contains(names));
+  });
 
-    // Change trailers
-    trailers.forEach(trailer => {
-        trailer.classList.remove('active');
-        if (trailer.classList.contains(names)) {
-            trailer.classList.add('active');
-        }
-    });
+  trailers.forEach((trailer) => {
+    trailer.classList.toggle("active", trailer.classList.contains(names));
+  });
 }

@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function getCardWidth() {
         const style = getComputedStyle(cards[0]);
         const marginRight = parseInt(style.marginRight) || 0;
-        return cards[0].offsetWidth + marginRight;
+        return cards[0].offsetWidth + 5;
     }
 
     let cardWidth = getCardWidth();
