@@ -228,6 +228,7 @@ h2{
 @media (min-width:1200px){
   .blog-box {
     width: 320px;
+    height: 100%;
   }
 }
 
@@ -238,6 +239,10 @@ h2{
   }
   .blog-box {
     width: 300px;
+    height: 100%;
+  }
+  .blog-img{
+    width: 280px;
   }
   .blog-text {
     width: auto;
@@ -253,6 +258,11 @@ h2{
   .blog-box {
     width: 300px;
     margin: 15px;
+    height: 100%;
+  }
+  .blog-img{
+    width: 270px;
+    height: auto;
   }
   .blog-heading {
     font-size: 35px;
@@ -276,10 +286,18 @@ h2{
   }
   .blog-box {
     width: 300px;
+    height: 100%;
   }
   .blog-text {
     width: 100%;
     height: auto;
+  }
+  .blog-img{
+    height: auto;
+    width: 270px;
+  }
+ .imge{
+    height: 27vh;
   }
   .blog-text .car-list{
     grid-template-columns: 1fr;
@@ -290,8 +308,8 @@ h2{
     align-items: flex-start;
   }
   .buy .BN{
-    right: 0;
-    margin-top: 10px;
+    /* right: 0;
+    margin-top: 10px; */
   }
 }
 

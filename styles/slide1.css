@@ -178,7 +178,7 @@
 /* Responsive */
 
 
-/*@media (max-width: 768px) {
+  /*@media (max-width: 768px) {
 
     .bmw-slide {
         flex: 1 1 100%; 
@@ -214,7 +214,7 @@
     } 
 }*/
 /* Large Screens (Desktops >1200px) */
-@media (min-width:1200px) {
+@media (max-width:1200px) {
   .bmw-slider-heading h3 {
     font-size: 48px;
   }
@@ -234,6 +234,14 @@
   .bmw-slide {
     width: 280px;
   }
+  .bmw-slide-img{
+    height: 100%;
+    
+  }
+  .bmw-slide-img img{
+    width: 270px;
+    height: 28vh;
+  }
   .bmw-slide-text {
     width: auto;
     height: auto;
@@ -249,9 +257,18 @@
     font-size: 16px;
   }
   .bmw-slide {
-    width: 45%;
+    width: 75%;
     margin: 10px;
   }
+  .bmw-slide-img{
+    height: 100%;
+        
+  }
+  .bmw-slide-img img{
+    height: 30vh;
+    width: 270px;
+  }
+  
   .bmw-slide-text {
     width: 100%;
     height: auto;
@@ -260,12 +277,14 @@
     margin: 10px 20px;
   }
   .buy {
-    flex-direction: column;
     align-items: flex-start;
   }
   .buy .BN1 {
     margin-top: 10px;
     right: 0;
+  }
+  .heading .year{
+            left: 30px;
   }
 }
 
@@ -278,8 +297,15 @@
     font-size: 14px;
   }
   .bmw-slide {
-    width: 100%;
-    height: 0vh;
+    width: 300px;
+    
+  }
+  .bmw-slide-img{
+        height: 100%;
+        
+  }
+  .bmw-slide-img img{
+    width: 280px;
   }
   .bmw-slide-text {
     width: 100%;
@@ -292,10 +318,19 @@
     font-size: 1.5rem;
     padding: 6px;
   }
+  .buy{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /* .heading .year{
+    position: relative;
+    left: 0;
+  } */
 }
 
 /* Extra Small Mobiles (<575px) */
-@media (max-width:575px) {
+@media  (max-width:575px) {
   .bmw-slider-heading h3 {
     font-size: 24px;
   }
@@ -306,11 +341,12 @@
     
     margin: 10px 12px;
     height: 50vh;
-    width: 100%;
-    min-width: 40vh;
+    width: 250px;
+    min-width: 36vh;
   }
   .bmw-slide-img img{
     height: 22vh;
+    width: 247px;
   }
   .heading {
     flex-direction: column;
@@ -325,6 +361,9 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5px;
+  }
+  .buy .price{
+    font-size: 20px;
   }
   .bmw-slide-text .car-list{
     display: grid;
