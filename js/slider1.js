@@ -60,7 +60,7 @@ function bmwUpdateSlider() {
 
 // Next button
 bmwNext.addEventListener("click", () => {
-  if (bmwIndex < bmwSlides.length - 1) {
+  if (bmwIndex < bmwSlides.length - 3) {
     bmwIndex++;
     bmwUpdateSlider();
   }
@@ -87,7 +87,7 @@ bmwTrack.addEventListener("touchstart", (e) => {
 
 bmwTrack.addEventListener("touchend", (e) => {
   let bmwEndX = e.changedTouches[0].clientX;
-  if (bmwStartX - bmwEndX > 50 && bmwIndex < bmwSlides.length - 1) {
+  if (bmwStartX - bmwEndX > 50 && bmwIndex < bmwSlides.length - 3) {
     bmwIndex++;
   } else if (bmwEndX - bmwStartX > 50 && bmwIndex > 0) {
     bmwIndex--;

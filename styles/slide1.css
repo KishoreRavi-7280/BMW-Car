@@ -333,15 +333,21 @@
     font-size: 12px;
   }
  .bmw-slide {
-    
-    margin: 10px 12px;
-    height: 52.6vh;
-    width: 250px;
-   
+    margin: 10px 7.5px;
+    height: 58.6vh;
+    width: 275px;
+  }
+  .bmw-booking-panel {
+        width: 95%;
+        padding: 30px 20px;
+        margin-left: -15px;
+  }
+  #body1{
+    padding: 0;
   }
   .bmw-slide-img img{
-    height: 22vh;
-    width: 247px;
+    height: 28vh;
+    width: 270px;
   }
   .heading {
     flex-direction: column;

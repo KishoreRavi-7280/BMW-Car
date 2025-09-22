@@ -329,6 +329,10 @@ h2{
   h2 {
     font-size: 22px;
   }
+  #blog{
+
+    padding: 0;
+  }
   .hp {
     font-size: 14px;
   }
@@ -342,7 +346,9 @@ h2{
     width: 100%;
     
   }
-  
+  #x5 img{
+    height: 30vh;
+  }
   .heading .year {
     position: relative;
     right: 130px;
