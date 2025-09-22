@@ -90,9 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     track.addEventListener("touchend", (e) => {
         let endX = e.changedTouches[0].clientX;
-        if (startX - endX > 50 && currentIndex < cards.length - 1) {
+        if (startX - endX > 30 && currentIndex < cards.length - 1) {
             currentIndex++;
-        } else if (endX - startX > 50 && currentIndex > 0) {
+        } else if (endX - startX > 30 && currentIndex > 0) {
             currentIndex--;
         }
         updateSlider();

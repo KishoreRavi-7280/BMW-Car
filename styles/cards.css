@@ -230,6 +230,9 @@ h2{
     width: 320px;
     height: 100%;
   }
+  #x5 img{
+    height: 31vh;
+  }
 }
 
 /* Laptops (992px - 1199px) */
@@ -264,6 +267,9 @@ h2{
     width: 270px;
     height: auto;
   }
+  #x5 img{
+    height: 29.9vh;
+  }
   .blog-heading {
     font-size: 35px;
   }
@@ -296,8 +302,8 @@ h2{
     height: auto;
     width: 270px;
   }
- .imge{
-    height: 27vh;
+ #x5 img{
+    height: 30vh;
   }
   .blog-text .car-list{
     grid-template-columns: 1fr;
@@ -334,7 +340,7 @@ h2{
     margin: 10px 12px;
     /* height: 38vh; */
     width: 100%;
-    min-width: 39vh;
+    
   }
   
   .heading .year {
