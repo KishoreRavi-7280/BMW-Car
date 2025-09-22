@@ -307,10 +307,10 @@ h2{
     flex-direction: column;
     align-items: flex-start;
   }
-  .buy .BN{
+  /* .buy .BN{
     /* right: 0;
-    margin-top: 10px; */
-  }
+    margin-top: 10px; 
+  } */
 }
 
 /* Extra Small Mobiles (<575px) */
@@ -334,7 +334,7 @@ h2{
     margin: 10px 12px;
     /* height: 38vh; */
     width: 100%;
-    min-width: 40vh;
+    min-width: 39vh;
   }
   
   .heading .year {
