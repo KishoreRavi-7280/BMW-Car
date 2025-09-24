@@ -255,6 +255,14 @@
       
       h2 {
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .bmw-booking-panel{
+        width: 95%;
+        display: flex;
+        justify-self: center;
+        align-items: center;
       }
       input, .slt, .bmw-btn {
         font-size: 14px;

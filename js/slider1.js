@@ -60,7 +60,7 @@ function bmwUpdateSlider() {
 
 // Next button
 bmwNext.addEventListener("click", () => {
-  if (bmwIndex < bmwSlides.length - 3) {
+  if (bmwIndex < bmwSlides.length - 1) {
     bmwIndex++;
     bmwUpdateSlider();
   }

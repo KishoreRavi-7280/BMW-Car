@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Next button
     nextBtn.addEventListener("click", () => {
-        if (currentIndex < cards.length - 3) {  // show 3 at a time
+        if (currentIndex < cards.length - 1) {  // show 3 at a time
             currentIndex++;
             updateSlider();
         }
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     track.addEventListener("touchend", (e) => {
         let endX = e.changedTouches[0].clientX;
-        if (startX - endX > 50 && currentIndex < cards.length - 4) {
+        if (startX - endX > 50 && currentIndex < cards.length - 3) {
             currentIndex++;
         } else if (endX - startX > 50 && currentIndex > 0) {
             currentIndex--;
